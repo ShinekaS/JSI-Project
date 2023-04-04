@@ -1,0 +1,38 @@
+/* Media screen query for mobile sized devices */
+@media only screen and (max-width: 460px) {
+    body {
+      background-color: lightblue;
+    }
+  
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 95%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+    gap: 10px;
+    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    gap: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    gap: 10px;
+}
+}
