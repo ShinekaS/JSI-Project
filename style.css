@@ -1,9 +1,5 @@
-/* Media screen query for mobile sized devices */
-@media only screen and (max-width: 460px) {
-    body {
-      background-color: lightblue;
-    }
-  
+/* Primary styling for mobile sized view
+Further stylings for larger screens added to media queries below */
 
 body{
     display: flex;
@@ -11,6 +7,7 @@ body{
     justify-content: center;
     gap: 15px;
     width: 95%;
+    background-color: lightblue;
 }
 
 header{
@@ -35,4 +32,10 @@ footer{
     border: 2px solid black;
     gap: 10px;
 }
+
+
+@media only screen and (min-width: 460px) {
+    body{
+        background-color: lightgrey;
+    }
 }
