@@ -34,9 +34,11 @@ body{
     justify-content: center;
     gap: 15px;
     width: 95%;
+
     background-color: rgb(211, 169, 14);
 
     background: linear-gradient(#fb9a33, #FFD014,#F19600 );
+
 }
 
 .topHeadButtons button{
@@ -56,7 +58,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh; 
+    height: 90vh; 
   }
   
   .text-on-image {
@@ -155,7 +157,7 @@ footer{
     margin: 10px;
     padding:1rem;
     text-align: center;
-    border-radius: 8px;
+
 }
 
 

@@ -2,6 +2,11 @@
   
 }
 /* About Page STyling */
+.contactBody {
+    justify-content: center;
+
+    
+}
 body {
     display: flex;
     flex-direction: column;
@@ -13,6 +18,7 @@ body {
     font-family: 'Kalam', cursive;
     /* font-family: 'Kavoon', cursive; */
 }
+
 #headTitle {
     display: flex;
     justify-content: center;
