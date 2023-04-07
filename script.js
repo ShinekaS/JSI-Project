@@ -12,6 +12,29 @@ let unplannedIdeas = [];
 let unplannedArea = document.querySelector('.unplannedList');
 
 
+let displayPlan = (element) => {
+    planArea.innerHTML = '';
+    planArea.insertAdjacentHTML('afterbegin', `
+           <article class="display-plan-area">
+                <section class="plan-display">
+                    <div>${'This feature coming soon... lololol'}</div>
+                </section>
+            </article>
+            `)};
+
+let buildPlannedList = () => {
+    plannedArea.innerHTML = 'Planned Ideas!';
+    plannedItems.forEach(element => {
+        let listItem = document.createElement('li');
+        listItem.addEventListener('click', (e) => {
+            let target = listItem
+            e.preventDefault();
+            displayPlan(target);
+        });
+        listItem.innerText = element.idea;
+        plannedArea.append(listItem);
+        });
+    };
 // This function takes a clicked list item and generates a form field to plan that idea, then moves it from the unplanned ideas into the planned ideas
 let addPlan = (element) => {
     planArea.innerHTML = '';
@@ -46,6 +69,7 @@ let buildUnplannedList = (array) => {
             let target = listItem
             e.preventDefault();
             addPlan(target)
+            console.log(plannedItems)
         });
         listItem.innerText = idea;
         console.log(listItem)
@@ -53,15 +77,6 @@ let buildUnplannedList = (array) => {
     });
 };
 
-let buildPlannedList = (array) => {
-    plannedArea.innerHTML = 'Planned Ideas!';
-    array.forEach(element => {
-        let listItem = document.createElement('li');
-        listItem.setAttribute('onclick', '')
-        listItem.innerText = element.idea;
-        plannedArea.append(listItem);
-    })
-};
 
 const suggestionHTML = `
 <div class="api-div">
